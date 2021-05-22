@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import NameManagement from './Components/NameManagement/NameManagement';
+import EmailManagement from './Components/EmailManagement/EmailManagement';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <div className="container">
+      </div>
+
+      <div className="container mt-5 d-flex">
+          <div className="col-md-6">
+            <NameManagement />
+          </div>
+          <div className="col-md-6">
+            <EmailManagement />
+          </div>
+
+      </div>
     </div>
   );
 }
